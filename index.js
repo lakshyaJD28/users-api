@@ -35,13 +35,13 @@ app.get("/user/:id", async (req, res) => {
 });
 
 app.post("/user", async (req, res) => {
-  const newUser = [
-    req.body.name,
-    req.body.gender,
-    req.body.age,
-    req.body.address,
-    req.body.mobile,
-  ];
+  const newUser = {
+    name:req.body.name,
+    gender:req.body.gender,
+    age:req.body.age,
+    address:req.body.address,
+    mobile:req.body.mobile,
+  };
   postUser(newUser, res);
 });
 
