@@ -1,5 +1,4 @@
 import db from "./database.js";
-import joi from "joi";
 import itemSchema from "./itemSchema.js";
 
 async function postUser(newUser, res) {
